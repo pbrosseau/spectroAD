@@ -10,7 +10,7 @@ The identification of outliers and data drift in high dimensional datasets is a 
 
 The dissimilarity of the experimental repetitions can be quantified by measuring the distance between points in the principal components basis. This distance can be measured in a basic geometrical sense, by taking the difference between the coordinates. However, when there is significant covariance in a dataset the geometrical distance may not be meaningful and the Mahalanobis distance between points can give a more complete picture of the variation over the course of an experiment [3]. The Mahalanobis distance, M, is defined as:
 
-M = sqrt((x - x_bar)S^-1(x-x_bar)^-1),
+$\mathcal{M} = \sqrt{(x-\bar{x})S^{-1}(x-\bar{x})^{-1}}$,
 
 where x is a row vector representing a single dataset, x_bar is the mean row vector and $S$ is the covariance matrix [3]. The Mahalanobis distance therefore scales the distance between points by the covariance.
 
